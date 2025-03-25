@@ -38,11 +38,11 @@ conda activate MTB_ML_env
 cd example
 ### main_Input
 
->../Data/rifampicin.csv
-../Data/rifampicin_to_predict_MTB.csv
+>. MTB-AMR/Data/rifampicin.csv
+. MTB-AMR/Data/rifampicin_to_predict_MTB.csv
 
 ```
-nohup python ../main.py -a rifampicin -l 2A -r ../Data/rifampicin.csv -t ../Data/rifampicin_to_predict_MTB.csv &
+nohup python  ../main.py -a rifampicin -l 2A -r ../Data/rifampicin.csv -t ../Data/rifampicin_to_predict_MTB.csv &
 ```
 
 ### main_Output
@@ -112,25 +112,25 @@ Open the notebook: Navigate to **Figure_2.ipynb**.<br>
 Execute the notebook: Run all cells in order.<br>
 
 ### Figure2_Output2
-./Figure2/Figure_2Bi.png
-./Figure2/Figure_2Bii.png
-./Figure2/Figure_2Biii.png
-./Figure2/Figure_2Biv.png
+../Figure2/Figure_2Bi.png
+../Figure2/Figure_2Bii.png
+../Figure2/Figure_2Biii.png
+../Figure2/Figure_2Biv.png
 
 
 ### Figure3_Input1
 
 ### Top15_Trainind data
->./Data/ethambutol_Top15.csv
-./Data/isoniazid_Top15.csv
-./Data/pyrazinamide_Top15.csv
-./Data/rifampicin_Top15.csv
+>../Data/ethambutol_Top15.csv
+../Data/isoniazid_Top15.csv
+../Data/pyrazinamide_Top15.csv
+../Data/rifampicin_Top15.csv
 
 ### Top15_To_predict data
->./Data/ethambutol_Top15_to_predict_MTB.csv
-./Data/isoniazid_Top15_to_predict_MTB.csv
-./Data/pyrazinamide_Top15_to_predict_MTB.csv
-./Data/rifampicin_Top15_to_predict_MTB.csv
+>../Data/ethambutol_Top15_to_predict_MTB.csv
+../Data/isoniazid_Top15_to_predict_MTB.csv
+../Data/pyrazinamide_Top15_to_predict_MTB.csv
+../Data/rifampicin_Top15_to_predict_MTB.csv
 
 
 ### Running the Code
@@ -142,72 +142,72 @@ Execute the notebook: Run all cells in order.<br>
 
 ### Figure3_Output1
 ### Top15_model
->./Figure3/Top15_model/ethambutol_ABC_Top15.sav
-./Figure3/Top15_model/ethambutol_BC_Top15.sav
-./Figure3/Top15_model/ethambutol_DT_Top15.sav
-./Figure3/Top15_model/ethambutol_ETC_Top15.sav
-./Figure3/Top15_model/ethambutol_GBC_Top15.sav
-./Figure3/Top15_model/ethambutol_KNN_Top15.sav
-./Figure3/Top15_model/ethambutol_LDA_Top15.sav
-./Figure3/Top15_model/ethambutol_LogR_Top15.sav
-./Figure3/Top15_model/ethambutol_RF_Top15.sav
-./Figure3/Top15_model/ethambutol_SVM_Top15.sav
-./Figure3/Top15_model/ethambutol_gNB_Top15.sav
-./Figure3/Top15_model/ethambutol_mNB_Top15.sav
-./Figure3/Top15_model/isoniazid_ABC_Top15.sav
-./Figure3/Top15_model/isoniazid_BC_Top15.sav
-./Figure3/Top15_model/isoniazid_DT_Top15.sav
-./Figure3/Top15_model/isoniazid_ETC_Top15.sav
-./Figure3/Top15_model/isoniazid_GBC_Top15.sav
-./Figure3/Top15_model/isoniazid_KNN_Top15.sav
-./Figure3/Top15_model/isoniazid_LDA_Top15.sav
-./Figure3/Top15_model/isoniazid_LogR_Top15.sav
-./Figure3/Top15_model/isoniazid_RF_Top15.sav
-./Figure3/Top15_model/isoniazid_SVM_Top15.sav
-./Figure3/Top15_model/isoniazid_gNB_Top15.sav
-./Figure3/Top15_model/isoniazid_mNB_Top15.sav
-./Figure3/Top15_model/rifampicin_ABC_Top15.sav
-./Figure3/Top15_model/rifampicin_BC_Top15.sav
-./Figure3/Top15_model/rifampicin_DT_Top15.sav
-./Figure3/Top15_model/rifampicin_ETC_Top15.sav
-./Figure3/Top15_model/rifampicin_GBC_Top15.sav
-./Figure3/Top15_model/rifampicin_KNN_Top15.sav
-./Figure3/Top15_model/rifampicin_LDA_Top15.sav
-./Figure3/Top15_model/rifampicin_LogR_Top15.sav
-./Figure3/Top15_model/rifampicin_RF_Top15.sav
-./Figure3/Top15_model/rifampicin_SVM_Top15.sav
-./Figure3/Top15_model/rifampicin_gNB_Top15.sav
-./Figure3/Top15_model/rifampicin_mNB_Top15.sav
-./Figure3/Top15_model/pyrazinamide_ABC_Top15.sav
-./Figure3/Top15_model/pyrazinamide_BC_Top15.sav
-./Figure3/Top15_model/pyrazinamide_DT_Top15.sav
-./Figure3/Top15_model/pyrazinamide_ETC_Top15.sav
-./Figure3/Top15_model/pyrazinamide_GBC_Top15.sav
-./Figure3/Top15_model/pyrazinamide_KNN_Top15.sav
-./Figure3/Top15_model/pyrazinamide_LDA_Top15.sav
-./Figure3/Top15_model/pyrazinamide_LogR_Top15.sav
-./Figure3/Top15_model/pyrazinamide_RF_Top15.sav
-./Figure3/Top15_model/pyrazinamide_SVM_Top15.sav
-./Figure3/Top15_model/pyrazinamide_gNB_Top15.sav
-./Figure3/Top15_model/pyrazinamide_mNB_Top15.sav
+>../Figure3/Top15_model/ethambutol_ABC_Top15.sav
+../Figure3/Top15_model/ethambutol_BC_Top15.sav
+../Figure3/Top15_model/ethambutol_DT_Top15.sav
+../Figure3/Top15_model/ethambutol_ETC_Top15.sav
+../Figure3/Top15_model/ethambutol_GBC_Top15.sav
+../Figure3/Top15_model/ethambutol_KNN_Top15.sav
+../Figure3/Top15_model/ethambutol_LDA_Top15.sav
+../Figure3/Top15_model/ethambutol_LogR_Top15.sav
+../Figure3/Top15_model/ethambutol_RF_Top15.sav
+../Figure3/Top15_model/ethambutol_SVM_Top15.sav
+../Figure3/Top15_model/ethambutol_gNB_Top15.sav
+../Figure3/Top15_model/ethambutol_mNB_Top15.sav
+../Figure3/Top15_model/isoniazid_ABC_Top15.sav
+../Figure3/Top15_model/isoniazid_BC_Top15.sav
+../Figure3/Top15_model/isoniazid_DT_Top15.sav
+../Figure3/Top15_model/isoniazid_ETC_Top15.sav
+../Figure3/Top15_model/isoniazid_GBC_Top15.sav
+../Figure3/Top15_model/isoniazid_KNN_Top15.sav
+../Figure3/Top15_model/isoniazid_LDA_Top15.sav
+../Figure3/Top15_model/isoniazid_LogR_Top15.sav
+../Figure3/Top15_model/isoniazid_RF_Top15.sav
+../Figure3/Top15_model/isoniazid_SVM_Top15.sav
+../Figure3/Top15_model/isoniazid_gNB_Top15.sav
+../Figure3/Top15_model/isoniazid_mNB_Top15.sav
+../Figure3/Top15_model/rifampicin_ABC_Top15.sav
+../Figure3/Top15_model/rifampicin_BC_Top15.sav
+../Figure3/Top15_model/rifampicin_DT_Top15.sav
+../Figure3/Top15_model/rifampicin_ETC_Top15.sav
+../Figure3/Top15_model/rifampicin_GBC_Top15.sav
+../Figure3/Top15_model/rifampicin_KNN_Top15.sav
+../Figure3/Top15_model/rifampicin_LDA_Top15.sav
+../Figure3/Top15_model/rifampicin_LogR_Top15.sav
+../Figure3/Top15_model/rifampicin_RF_Top15.sav
+../Figure3/Top15_model/rifampicin_SVM_Top15.sav
+../Figure3/Top15_model/rifampicin_gNB_Top15.sav
+../Figure3/Top15_model/rifampicin_mNB_Top15.sav
+../Figure3/Top15_model/pyrazinamide_ABC_Top15.sav
+../Figure3/Top15_model/pyrazinamide_BC_Top15.sav
+../Figure3/Top15_model/pyrazinamide_DT_Top15.sav
+../Figure3/Top15_model/pyrazinamide_ETC_Top15.sav
+../Figure3/Top15_model/pyrazinamide_GBC_Top15.sav
+../Figure3/Top15_model/pyrazinamide_KNN_Top15.sav
+../Figure3/Top15_model/pyrazinamide_LDA_Top15.sav
+../Figure3/Top15_model/pyrazinamide_LogR_Top15.sav
+../Figure3/Top15_model/pyrazinamide_RF_Top15.sav
+../Figure3/Top15_model/pyrazinamide_SVM_Top15.sav
+../Figure3/Top15_model/pyrazinamide_gNB_Top15.sav
+../Figure3/Top15_model/pyrazinamide_mNB_Top15.sav
 
 ### Figure3_Input2
 ### India_To_predict_data
->./Figure3/Data_to_predict/India_ethambutol_to_predict_MTB_166.csv
-./Figure3/Data_to_predict/India_isoniazid_to_predict_MTB_166.csv
-./Figure3/Data_to_predict/India_pyrazinamide_to_predict_MTB_166.csv
-./Figure3/Data_to_predict/India_rifampicin_to_predict_MTB_166.csv
+>../Figure3/Data_to_predict/India_ethambutol_to_predict_MTB_166.csv
+../Figure3/Data_to_predict/India_isoniazid_to_predict_MTB_166.csv
+../Figure3/Data_to_predict/India_pyrazinamide_to_predict_MTB_166.csv
+../Figure3/Data_to_predict/India_rifampicin_to_predict_MTB_166.csv
 
->./Figure3/Data_to_predict/India_ethambutol_to_predict_MTB_166_sort.csv
-./Figure3/Data_to_predict/India_isoniazid_to_predict_MTB_166_sort.csv
-./Figure3/Data_to_predict/India_pyrazinamide_to_predict_MTB_166_sort.csv
-./Figure3/Data_to_predict/India_rifampicin_to_predict_MTB_166_sort.csv
+>../Figure3/Data_to_predict/India_ethambutol_to_predict_MTB_166_sort.csv
+../Figure3/Data_to_predict/India_isoniazid_to_predict_MTB_166_sort.csv
+../Figure3/Data_to_predict/India_pyrazinamide_to_predict_MTB_166_sort.csv
+../Figure3/Data_to_predict/India_rifampicin_to_predict_MTB_166_sort.csv
 
 ### True phenotype of 166 India Isolates
->./Figure3/Data_to_predict/India_ethambutol_Top15_phenotype.txt
-./Figure3/Data_to_predict/India_isoniazid_Top15_phenotype.txt
-./Figure3/Data_to_predict/India_pyrazinamide_Top15_phenotype.txt
-./Figure3/Data_to_predict/India_rifampicin_Top15_phenotype.txt
+>../Figure3/Data_to_predict/India_ethambutol_Top15_phenotype.txt
+../Figure3/Data_to_predict/India_isoniazid_Top15_phenotype.txt
+../Figure3/Data_to_predict/India_pyrazinamide_Top15_phenotype.txt
+../Figure3/Data_to_predict/India_rifampicin_Top15_phenotype.txt
 
 ### Running the Code
 ```bash
@@ -217,35 +217,35 @@ Open the notebook: Navigate to **Figure_3.ipynb**.<br>
 Execute the notebook: Run all cells in order.<br>
 
 ### Figure3_Output2
->./Figure3/Data_to_predict_rst/rst_India_ethambutol_to_predict_MTB.csv
-./Figure3/Data_to_predict_rst/rst_India_isoniazid_to_predict_MTB.csv
-./Figure3/Data_to_predict_rst/rst_India_pyrazinamide_to_predict_MTB.csv
-./Figure3/Data_to_predict_rst/rst_India_rifampicin_to_predict_MTB.csv
+>../Figure3/Data_to_predict_rst/rst_India_ethambutol_to_predict_MTB.csv
+../Figure3/Data_to_predict_rst/rst_India_isoniazid_to_predict_MTB.csv
+../Figure3/Data_to_predict_rst/rst_India_pyrazinamide_to_predict_MTB.csv
+../Figure3/Data_to_predict_rst/rst_India_rifampicin_to_predict_MTB.csv
 
->./Figure3/Data_to_predict_rst/ethambutol_predict_rst_12model.csv
-./Figure3/Data_to_predict_rst/isoniazid_predict_rst_12model.csv
-./Figure3/Data_to_predict_rst/pyrazinamide_predict_rst_12model.csv
-./Figure3/Data_to_predict_rst/rifampicin_predict_rst_12model.csv
+>../Figure3/Data_to_predict_rst/ethambutol_predict_rst_12model.csv
+../Figure3/Data_to_predict_rst/isoniazid_predict_rst_12model.csv
+../Figure3/Data_to_predict_rst/pyrazinamide_predict_rst_12model.csv
+../Figure3/Data_to_predict_rst/rifampicin_predict_rst_12model.csv
 
 ### merge all predict_rst_12model.csv to Table_S6.xlsx
->./Figure3/Table_S6.xlsx
+>../Figure3/Table_S6.xlsx
 
 ### Running the Code
 ```bash
 cd MTB-AMR/Figure3
 ```
-Open the Rstudio: Navigate to **./Figure3/Figure3A.R**<br>
+Open the Rstudio: Navigate to ** MTB-AMR/Figure3/Figure3A.R**<br>
 Execute the Rstudio: Run the scripts.<br>
 
 ### Figure3_Output3
->./Figure3/Figure3A_RIF.png
-./Figure3/Figure3A_INH.png
+> MTB-AMR/Figure3/Figure3A_RIF.png
+ MTB-AMR/Figure3/Figure3A_INH.png
 
-Open the Rstudio: Navigate to **./Figure3/Figure3C.R** <br>
+Open the Rstudio: Navigate to ** MTB-AMR/Figure3/Figure3C.R** <br>
 Execute the Rstudio: Run the scripts.<br>
 ### Figure3_Output3
->./Figure3/Figure3C_INH.png
-./Figure3/Figure3C_RIF.png
+> MTB-AMR/Figure3/Figure3C_INH.png
+ MTB-AMR/Figure3/Figure3C_RIF.png
 
 
 #### For any questions or issues, please contact Ying Mao at microbial_research@163.com.<br>

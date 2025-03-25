@@ -1,4 +1,4 @@
-# Machine Learning-Based Prediction of Antimicrobial Resistance and Identification of AMR-Related SNPs in Mycobacterium tuberculosis
+# Machine Learning-Based Prediction of Antimicrobial Resistance and Identification of AMR-Related SNPs in <em>Mycobacterium tuberculosis</em>
 Yi Xu 1,3,†, Ying Mao 2,3,†, Xiaoting Hua 1,4, Yan Jiang 1,4, Yi Zou 3, Zhichao Wang 3, Zubi Liu 1,3, Hongrui Zhang 5, Lingling Lu 3* and Yunsong Yu 1,4*
 
 1)Department of Infectious Diseases, Sir Run Run Shaw Hospital, Zhejiang University School of Medicine, Hangzhou, Zhejiang, China, 310016.

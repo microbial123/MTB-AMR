@@ -27,21 +27,15 @@ git clone https://github.com/microbial123/MTB-AMR.git
 cd MTB-AMR
 ```
 
-#### Method 1: 
+#### Method: 
 ```bash
 cd MTB-AMR/env
 conda env create -f MTB_ML_env.yml
 conda activate MTB_ML_env
 ```
-#### Method 2:
-```bash
-#install python==3.8.15
-python -V 
-pip install -r AMR_env.txt
-```
 
 ### Run the test:
-cd test
+cd example
 ### main_Input
 
 >../Data/rifampicin.csv
@@ -53,41 +47,41 @@ nohup python main.py -a rifampicin -l 2A -r ../Data/rifampicin.csv -t ../Data/ri
 
 ### main_Output
 
->../test/ML_Plot_MTB_rifampicin_6-fold_CV.tiff
-../test/MTB_rifampicin_All_Set_Performance_6-fold_CV.csv
-../test/MTB_rifampicin_All_Set_Performance_Training_Performance_6-fold_CV.csv
-../test/MTB_rifampicin_All_Set_Test_Area_Under_Precision_Recall_6-fold_CV.csv
-../test/MTB_rifampicin_All_Set_Test_Area_Under_ROC_6-fold_CV.csv
-../test/MTB_rifampicin_All_Set_Test_Training_Performance_6-fold_CV.csv
-../test/MTB_rifampicin_All_Set_Tf_CV_6-fold_CV.csv
-../test/MTB_rifampicin_Complete_Results_6-fold_CV.csv
-../test/MTB_rifampicin_Consistent_Genes_Per_6-fold_CV.csv
-../test/MTB_rifampicin_F1_comparision_6-fold_CV.csv
-../test/MTB_rifampicin_Intersect_Set_Performance_Area_Under_Precision_Recall_6-fold_CV.csv
-../test/MTB_rifampicin_Intersect_Set_Performance_Area_Under_ROC_6-fold_CV.csv
-../test/MTB_rifampicin_Intersect_Set_Performance_Test_Performance_6-fold_CV.csv
-../test/MTB_rifampicin_Intersect_Set_Performance_Training_Performance_6-fold_CV.csv
-../test/MTB_rifampicin_Intersect_Set_Tf_CV_6-fold_CV.csv
-../test/MTB_rifampicin_Intersection_Set_Performance_6-fold_CV.csv
-../test/MTB_rifampicin_Random_Set_Performance_6-fold_CV.csv
-../test/MTB_rifampicin_Random_Set_Performance_Tf_CV_6-fold_CV.csv
-../test/MTB_rifampicin_Random_Set_Performance_Training_Performance_6-fold_CV.csv
-../test/MTB_rifampicin_Random_Set_Test_Area_Under_Precision_Recall_6-fold_CV.csv
-../test/MTB_rifampicin_Random_Set_Test_Area_Under_ROC_6-fold_CV.csv
-../test/MTB_rifampicin_Random_Set_Test_Loo_CV_6-fold_CV.csv
-../test/MTB_rifampicin_Random_Set_Test_Training_Performance_6-fold_CV.csv
-../test/rifampicin_ABC.sav
-../test/rifampicin_BC.sav
-../test/rifampicin_DT.sav
-../test/rifampicin_ETC.sav
-../test/rifampicin_GBC.sav
-../test/rifampicin_KNN.sav
-../test/rifampicin_LDA.sav
-../test/rifampicin_LogR.sav
-../test/rifampicin_RF.sav
-../test/rifampicin_SVM.sav
-../test/rifampicin_gNB.sav
-../test/rifampicin_mNB.sav
+>../example/ML_Plot_MTB_rifampicin_6-fold_CV.tiff
+../example/MTB_rifampicin_All_Set_Performance_6-fold_CV.csv
+../example/MTB_rifampicin_All_Set_Performance_Training_Performance_6-fold_CV.csv
+../example/MTB_rifampicin_All_Set_Test_Area_Under_Precision_Recall_6-fold_CV.csv
+../example/MTB_rifampicin_All_Set_Test_Area_Under_ROC_6-fold_CV.csv
+../example/MTB_rifampicin_All_Set_Test_Training_Performance_6-fold_CV.csv
+../example/MTB_rifampicin_All_Set_Tf_CV_6-fold_CV.csv
+../example/MTB_rifampicin_Complete_Results_6-fold_CV.csv
+../example/MTB_rifampicin_Consistent_Genes_Per_6-fold_CV.csv
+../example/MTB_rifampicin_F1_comparision_6-fold_CV.csv
+../example/MTB_rifampicin_Intersect_Set_Performance_Area_Under_Precision_Recall_6-fold_CV.csv
+../example/MTB_rifampicin_Intersect_Set_Performance_Area_Under_ROC_6-fold_CV.csv
+../example/MTB_rifampicin_Intersect_Set_Performance_Test_Performance_6-fold_CV.csv
+../example/MTB_rifampicin_Intersect_Set_Performance_Training_Performance_6-fold_CV.csv
+../example/MTB_rifampicin_Intersect_Set_Tf_CV_6-fold_CV.csv
+../example/MTB_rifampicin_Intersection_Set_Performance_6-fold_CV.csv
+../example/MTB_rifampicin_Random_Set_Performance_6-fold_CV.csv
+../example/MTB_rifampicin_Random_Set_Performance_Tf_CV_6-fold_CV.csv
+../example/MTB_rifampicin_Random_Set_Performance_Training_Performance_6-fold_CV.csv
+../example/MTB_rifampicin_Random_Set_Test_Area_Under_Precision_Recall_6-fold_CV.csv
+../example/MTB_rifampicin_Random_Set_Test_Area_Under_ROC_6-fold_CV.csv
+../example/MTB_rifampicin_Random_Set_Test_Loo_CV_6-fold_CV.csv
+../example/MTB_rifampicin_Random_Set_Test_Training_Performance_6-fold_CV.csv
+../example/rifampicin_ABC.sav
+../example/rifampicin_BC.sav
+../example/rifampicin_DT.sav
+../example/rifampicin_ETC.sav
+../example/rifampicin_GBC.sav
+../example/rifampicin_KNN.sav
+../example/rifampicin_LDA.sav
+../example/rifampicin_LogR.sav
+../example/rifampicin_RF.sav
+../example/rifampicin_SVM.sav
+../example/rifampicin_gNB.sav
+../example/rifampicin_mNB.sav
 
 
 
@@ -100,18 +94,18 @@ cd MTB-AMR/Figure2
 ### Figure2_Input2
 >../Data/rifampicin.csv
 ../Data/rifampicin_to_predict_MTB.csv
-../test/rifampicin_ABC.sav
-../test/rifampicin_BC.sav
-../test/rifampicin_DT.sav
-../test/rifampicin_ETC.sav
-../test/rifampicin_GBC.sav
-../test/rifampicin_KNN.sav
-../test/rifampicin_LDA.sav
-../test/rifampicin_LogR.sav
-../test/rifampicin_RF.sav
-../test/rifampicin_SVM.sav
-../test/rifampicin_gNB.sav
-../test/rifampicin_mNB.sav
+../example/rifampicin_ABC.sav
+../example/rifampicin_BC.sav
+../example/rifampicin_DT.sav
+../example/rifampicin_ETC.sav
+../example/rifampicin_GBC.sav
+../example/rifampicin_KNN.sav
+../example/rifampicin_LDA.sav
+../example/rifampicin_LogR.sav
+../example/rifampicin_RF.sav
+../example/rifampicin_SVM.sav
+../example/rifampicin_gNB.sav
+../example/rifampicin_mNB.sav
 
 
 Open the notebook: Navigate to **Figure_2.ipynb**.<br>

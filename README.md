@@ -38,8 +38,8 @@ conda activate MTB_ML_env
 cd MTB-AMR/example
 ### main_Input
 
->. MTB-AMR/Data/rifampicin.csv
-. MTB-AMR/Data/rifampicin_to_predict_MTB.csv
+>MTB-AMR/Data/rifampicin.csv
+MTB-AMR/Data/rifampicin_to_predict_MTB.csv
 
 ```
 nohup python  ../main.py -a rifampicin -l 2A -r ../Data/rifampicin.csv -t ../Data/rifampicin_to_predict_MTB.csv &

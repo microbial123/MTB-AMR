@@ -35,7 +35,7 @@ conda activate MTB_ML_env
 ```
 
 ### Run the test:
-cd example
+cd MTB-AMR/example
 ### main_Input
 
 >. MTB-AMR/Data/rifampicin.csv

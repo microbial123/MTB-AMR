@@ -42,7 +42,7 @@ cd example
 ../Data/rifampicin_to_predict_MTB.csv
 
 ```
-nohup python main.py -a rifampicin -l 2A -r ../Data/rifampicin.csv -t ../Data/rifampicin_to_predict_MTB.csv &
+nohup python ../main.py -a rifampicin -l 2A -r ../Data/rifampicin.csv -t ../Data/rifampicin_to_predict_MTB.csv &
 ```
 
 ### main_Output

@@ -18,7 +18,8 @@ These are the programming codes used in our paper "A Machine Learning Framework 
 Prepare your training and test datasets in advance.
 #1.2 Execution Steps
 To construct the model, execute the main.py script via the command line using the following command:
-bash```
+
+```bash
 python main.py -a rifampicin -l 2A -r rifampicin.csv -t rifampicin_to_predict_MTB.csv
 ```
 -a: Specify the name of the antibiotic. Here, it is set to rifampicin.

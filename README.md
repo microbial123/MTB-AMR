@@ -22,16 +22,16 @@ To construct the model, execute the main.py script via the command line using th
 ```bash
 python main.py -a rifampicin -l 2A -r rifampicin.csv -t rifampicin_to_predict_MTB.csv
 ```
--a: Specify the name of the antibiotic. Here, it is set to rifampicin.\n
--l: Represents a specific parameter, in this case, 2A.\n
--r: Designate the training dataset file (in CSV format).\n
--t: Designate the test dataset file (in CSV format) used for predicting drug resistance of Mycobacterium tuberculosis (MTB).\n
+-a: Specify the name of the antibiotic. Here, it is set to rifampicin.\
+-l: Represents a specific parameter, in this case, 2A.\
+-r: Designate the training dataset file (in CSV format).\
+-t: Designate the test dataset file (in CSV format) used for predicting drug resistance of Mycobacterium tuberculosis (MTB).\
 
 #### 2. Single Isolate Prediction
 ##### 2.1 Data Preparation
 If you need to predict the drug - resistance phenotype of a single isolate, first prepare the dataset following the detailed descriptions provided in Figure_3.ipynb.
 ##### 2.2 Prediction Execution
-After data preparation, run the To_predict_ML_run function. This function will utilize 12 pre - trained machine learning models (e.g., Top15_model/rifampicin_GBC_Top15.sav). These models employ the Top 15 Single - Nucleotide Polymorphisms (SNPs) to predict the drug - resistance phenotypes of the single isolate against specific antibiotics.\n
+After data preparation, run the To_predict_ML_run function. This function will utilize 12 pre - trained machine learning models (e.g., Top15_model/rifampicin_GBC_Top15.sav). These models employ the Top 15 Single - Nucleotide Polymorphisms (SNPs) to predict the drug - resistance phenotypes of the single isolate against specific antibiotics.\
 
 
 

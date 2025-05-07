@@ -13,25 +13,25 @@ In this study, we applied this machine learning (ML) framework to predict resist
 These are the programming codes used in our paper "A Machine Learning Framework to Antimicrobial Resistance Prediction and Characterization of AMR-Related SNPs in *Mycobacterium tuberculosis*". 
 
 ### Usage Guide
-## 1. Model Construction with Datasets
-# 1.1 Prerequisites
+#### 1. Model Construction with Datasets
+##### 1.1 Prerequisites
 Prepare your training and test datasets in advance.
-# 1.2 Execution Steps
+##### 1.2 Execution Steps
 To construct the model, execute the main.py script via the command line using the following command:
 
 ```bash
 python main.py -a rifampicin -l 2A -r rifampicin.csv -t rifampicin_to_predict_MTB.csv
 ```
--a: Specify the name of the antibiotic. Here, it is set to rifampicin.
--l: Represents a specific parameter, in this case, 2A.
--r: Designate the training dataset file (in CSV format).
--t: Designate the test dataset file (in CSV format) used for predicting drug resistance of Mycobacterium tuberculosis (MTB).
+-a: Specify the name of the antibiotic. Here, it is set to rifampicin.\n
+-l: Represents a specific parameter, in this case, 2A.\n
+-r: Designate the training dataset file (in CSV format).\n
+-t: Designate the test dataset file (in CSV format) used for predicting drug resistance of Mycobacterium tuberculosis (MTB).\n
 
-## 2. Single Isolate Prediction
-# 2.1 Data Preparation
+#### 2. Single Isolate Prediction
+##### 2.1 Data Preparation
 If you need to predict the drug - resistance phenotype of a single isolate, first prepare the dataset following the detailed descriptions provided in Figure_3.ipynb.
-# 2.2 Prediction Execution
-After data preparation, run the To_predict_ML_run function. This function will utilize 12 pre - trained machine learning models (e.g., Top15_model/rifampicin_GBC_Top15.sav). These models employ the Top 15 Single - Nucleotide Polymorphisms (SNPs) to predict the drug - resistance phenotypes of the single isolate against specific antibiotics.
+##### 2.2 Prediction Execution
+After data preparation, run the To_predict_ML_run function. This function will utilize 12 pre - trained machine learning models (e.g., Top15_model/rifampicin_GBC_Top15.sav). These models employ the Top 15 Single - Nucleotide Polymorphisms (SNPs) to predict the drug - resistance phenotypes of the single isolate against specific antibiotics.\n
 
 
 

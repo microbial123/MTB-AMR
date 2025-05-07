@@ -9,35 +9,8 @@ Yi Xu 1,3,†, Ying Mao 2,3,†, Xiaoting Hua 1,4, Yan Jiang 1,4, Yi Zou 3, Zhic
 
 ### Brief overview
 In this study, we applied this machine learning (ML) framework to predict resistance phenotypes for 12 anti-tuberculosis drugs while outputting SNPs associated with resistance. Then, the SHapley Additive exPlanations (SHAP) framework was used to decipher why and how decisions were made in the optimal algorithm. Lastly, we applied the models to predict the resistance phenotype to rifampicin (RIF) and isoniazid (INH) in an additional independent MTB isolates dataset from India.
-### Programming codes
-These are the programming codes used in our paper "A Machine Learning Framework to Antimicrobial Resistance Prediction and Characterization of AMR-Related SNPs in *Mycobacterium tuberculosis*". 
 
 ### Usage Guide
-#### 1. Model Construction with Datasets
-##### 1.1 Prerequisites
-Prepare your training and test datasets in advance.
-##### 1.2 Execution Steps
-To construct the model, execute the main.py script via the command line using the following command:
-
-```bash
-python main.py -a rifampicin -l 2A -r rifampicin.csv -t rifampicin_to_predict_MTB.csv
-```
--a: Specify the name of the antibiotic. Here, it is set to rifampicin.\
--l: Represents a specific parameter, in this case, 2A.\
--r: Designate the training dataset file (in CSV format).\
--t: Designate the test dataset file (in CSV format) used for predicting drug resistance of Mycobacterium tuberculosis (MTB).\
-
-#### 2. Single Isolate Prediction
-##### 2.1 Data Preparation
-If you need to predict the drug - resistance phenotype of a single isolate, first prepare the dataset following the detailed descriptions provided in Figure_3.ipynb.
-##### 2.2 Prediction Execution
-After data preparation, run the To_predict_ML_run function. This function will utilize 12 pre - trained machine learning models (e.g., Top15_model/rifampicin_GBC_Top15.sav). These models employ the Top 15 Single - Nucleotide Polymorphisms (SNPs) to predict the drug - resistance phenotypes of the single isolate against specific antibiotics.\
-
-
-
-### Get Started
-Follow these steps to install packages and run the examples.
-
 ### Technical Stack
 - Language: Python=3.8.15; R=4.0
 - Libraries: Pandas, NumPy, Scikit-Learn, Matplotlib, shap, etc.
@@ -58,7 +31,34 @@ conda env create -f MTB_ML_env.yml
 conda activate MTB_ML_env
 ```
 
-### Run the test:
+#### 1. Model Construction with Datasets
+##### 1.1 Prerequisites
+Prepare your training and test datasets in advance.
+
+##### 1.2 Execution Steps
+To construct the model, execute the main.py script via the command line using the following command:
+
+```bash
+python main.py -a rifampicin -l 2A -r rifampicin.csv -t rifampicin_to_predict_MTB.csv
+```
+-a: Specify the name of the antibiotic. Here, it is set to rifampicin.\
+-l: Represents a specific figure parameter, in this case, 2A.\
+-r: Designate the training dataset file (in CSV format).\
+-t: Designate the test dataset file (in CSV format) used for predicting drug resistance of MTB.\
+
+
+#### 2. Single Isolate Prediction
+##### 2.1 Data Preparation
+If you need to predict the drug - resistance phenotype of a single isolate, first prepare the dataset following the detailed descriptions provided in Figure_3.ipynb.\
+
+##### 2.2 Prediction Execution
+After data preparation, run the To_predict_ML_run function. This function will utilize 12 pre-trained machine learning models (e.g., Top15_model/rifampicin_GBC_Top15.sav). These models employ the Top 15 Single Nucleotide Polymorphisms (SNPs) to predict the drug-resistance phenotypes of the single isolate against specific antibiotics.\
+
+
+
+
+### Execute the step-by-step procedures through the examples.
+
 cd MTB-AMR/example
 ### main_Input
 
